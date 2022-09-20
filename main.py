@@ -1,7 +1,8 @@
 import numpy as np
 from scipy.linalg import expm
 from Config import *
-from plots import plot
+from matrix_exp_plots import plot
+
 
 # Creating coefficient's matrix
 A_matrix = np.array([[-Decay.dBi209, 0, 0],

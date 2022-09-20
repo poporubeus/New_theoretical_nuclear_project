@@ -34,7 +34,7 @@ def plot(Polonium_problem):
     plt.title('Matrix exponential method for Po210')
     plt.xlabel('Time [days]')
     plt.ylabel('Nuclide concentration')
-    plt.plot(Polonium_problem[:, 2], 'g', label='Polonium210')
+    plt.plot(Polonium_problem[:, 2], 'y', label='Polonium210')
     plt.legend()
     plt.grid(True)
 
