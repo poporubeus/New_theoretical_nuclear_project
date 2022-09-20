@@ -2,6 +2,19 @@ import matplotlib.pyplot as plt
 
 
 def plot_rk(Polonium_problem):
+
+    """
+    Function that plots the result of Runge-Kutta method.
+
+    Args:
+        Polonium_problem.
+
+    Returns:
+        Figures : [fig0, fig1, fig2]
+
+    """
+
+    # Plot
     fig0 = plt.figure()
     plt.title('Bi-209')
     plt.plot(Polonium_problem[:, 0], 'r', label='Bismuth209')
