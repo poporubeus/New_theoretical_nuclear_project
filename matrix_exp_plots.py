@@ -21,8 +21,6 @@ def plot(Polonium_problem):
     plt.legend()
     plt.grid(True)
 
-    plt.savefig('Bismuth-209_EXPM.png')
-
     fig1 = plt.figure()
     plt.title('Matrix exponential method for Bi210')
     plt.xlabel('Time [days]')
@@ -30,8 +28,6 @@ def plot(Polonium_problem):
     plt.plot(Polonium_problem[:, 1], 'b', label='Bismuth210')
     plt.legend()
     plt.grid(True)
-
-    plt.savefig('Bismuth-210_EXPM.png')
 
     fig2 = plt.figure()
     plt.title('Matrix exponential method for Po210')
@@ -41,9 +37,6 @@ def plot(Polonium_problem):
     plt.legend()
     plt.grid(True)
 
-    plt.savefig('Polonium-210_EXPM.png')
-
     plt.show()
 
     return [fig0, fig1, fig2]
-

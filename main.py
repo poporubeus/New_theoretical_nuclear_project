@@ -32,6 +32,7 @@ def matrix_exp(Bi209_t, Bi210_t, Po210_t):
 
     """
 
+    # Implementing the product matrix * array and use scipy.linalg.expm to compute Padè approximation
     exp_matrix_prod = np.matmul(expm(Par.time_step * A_matrix), np.array(([Bi209_t, Bi210_t, Po210_t])))
     return exp_matrix_prod
 
@@ -49,12 +50,15 @@ def main(time, dt):
 
     """
 
-    sol_in = [[Init.Bi209_0, Init.Bi210_0, Init.Po210_0]]  # List of the initial nuclide's concentrations
+    # List of the initial nuclide's concentrations
+    sol_in = [[Init.Bi209_0, Init.Bi210_0, Init.Po210_0]]
 
     for i in range(Par.total_time):
-        sol_in.append(matrix_exp(sol_in[i][0], sol_in[i][1], sol_in[i][2]))  # Calling the method and iterate
+        # Calling the method and iterate
+        sol_in.append(matrix_exp(sol_in[i][0], sol_in[i][1], sol_in[i][2]))
 
-    sol_updated = np.array(sol_in)  # Updating the vector solution
+    # Updating the vector solution
+    sol_updated = np.array(sol_in)
 
     return sol_updated
 
@@ -62,3 +66,5 @@ def main(time, dt):
 if __name__ == '__main__':
     Polonium_problem = main(time=Par.total_time, dt=Par.time_step)  # Calling the method
     plot(Polonium_problem)
+
+

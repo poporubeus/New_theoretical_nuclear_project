@@ -70,5 +70,4 @@ u0 = [Init.Bi209_0, Init.Bi210_0, Init.Po210_0]
 u = rk_method(ode_system, u0, dt, time)
 
 if __name__ == '__main__':
-    Polonium_problem = rk_method(ode_system, u0, dt, time)
-    plot_rk(Polonium_problem)
+    plot_rk(u)
