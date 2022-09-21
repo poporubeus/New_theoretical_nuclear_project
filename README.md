@@ -41,7 +41,8 @@ By doing this project, many papers, websites have been used. They are quote here
 Here a collection of Python libraries used to do the code:
 1. Numpy;
 2. Scipy.linalg.expm (Padé approximation);
-3. Matplotlib.pyplot.
+3. Matplotlib.pyplot;
+4. Tabulate.
 
 ## Run
 ```shell
