@@ -56,7 +56,7 @@ def plot_error_functions(err_list):
     """
     fig0 = plt.figure()
     plt.plot(err_list[0], 'k', label='Difference between matrix and Runge-Kutta method for Bi-209')
-    plt.xlabel('Time [hours]')
+    plt.xlabel('Time [days]')
     plt.ylabel('Error function Bi-209')
     plt.legend(loc=0)
     plt.grid(True)
@@ -64,7 +64,7 @@ def plot_error_functions(err_list):
 
     fig1 = plt.figure()
     plt.plot(err_list[1], 'k', label='Difference between matrix and Runge-Kutta method for Bi-210')
-    plt.xlabel('Time [hours]')
+    plt.xlabel('Time [days]')
     plt.ylabel('Error function Bi-210')
     plt.legend(loc=9)
     plt.grid(True)
@@ -72,7 +72,7 @@ def plot_error_functions(err_list):
 
     fig2 = plt.figure()
     plt.plot(err_list[2], 'k', label='Difference between matrix and Runge-Kutta method for Po-210')
-    plt.xlabel('Time [hours]')
+    plt.xlabel('Time [days]')
     plt.ylabel('Error function Po-210')
     plt.legend(loc=8)
     plt.grid(True)
